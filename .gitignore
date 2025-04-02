@@ -1,23 +1,57 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+# 原始React配置（保留不变）
 /node_modules
 /.pnp
 .pnp.js
-
-# testing
 /coverage
-
-# production
 /build
-
-# misc
 .DS_Store
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+### 新增Python后端配置 ###
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# Python编译缓存
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+.pytest_cache/
+
+# 安装包和构建输出
+dist/
+build/
+pip-log.txt
+
+# 环境变量（新增全局.env）
+.env
+.env.*.local
+
+# 数据库和日志
+*.sqlite
+*.dump
+*.log
+/mysql_data/  # 如果使用本地MySQL数据目录
+
+# IDE配置（新增）
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# 临时文件（新增）
+*.tmp
+*.bak
+*.swp
+*.swo
